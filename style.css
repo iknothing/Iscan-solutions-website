@@ -43,11 +43,11 @@ nav ul li a {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(4, 4, 4, 0.5)), url('header2.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(4, 4, 4, 0.5)), url('header1.jpg');
 display: flex;
   margin-left: auto;
   margin-right: auto;
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   display: flex;
