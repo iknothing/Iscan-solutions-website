@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#logo {
+  float: left;
+  height: 50px;
+  width: auto; 
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  width: 100%;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;  
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(4, 4, 4, 0.5)), url('header1.jpg');
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+header h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+a{
+  font: 1em sans-serif;
+  text-decoration: none;
+  color: rgb(0, 208, 255);
+}
+
+.btn {
+  background: #00b3ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.services {
+  background: #f2f2f2;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.services h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about {
+  padding: 80px 0;
+}
+
+.about h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.contact {
+  background: #333;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.contact h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact button {
+  background: #00b3ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-images {
+  text-align: center;
+  position: relative;
+}
+
+.service-image {
+  max-width: 100%;
+  transition: opacity 1s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.show {
+  height: auto;
+}
