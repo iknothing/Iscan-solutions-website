@@ -5,11 +5,12 @@
 }
 #logo {
   float: left;
-  height: 50px;
+  height: 70px;
   width: auto; 
 }
 body {
   font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,6 +24,7 @@ nav {
   color: rgb(0, 0, 0);
   position: fixed;
   width: 100%;
+  z-index: 1;
   
 }
 
@@ -43,28 +45,31 @@ nav ul li a {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(4, 4, 4, 0.5)), url('header1.jpg');
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.579),rgba(10, 0, 28, 0.278)), url('header7.jpg');
   display: flex;
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
+  /* justify-content: left ; */
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
+header h1 {
+  margin-left: 10px;
+}
 header h2 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
+  color: #00b3ff;
 }
 a{
   font: 1em sans-serif;
   text-decoration: none;
-  color: rgb(0, 208, 255);
+  color: #33dcf6;
 }
 
 .btn {
@@ -76,6 +81,15 @@ a{
   border-radius: 25px;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: #0062cc;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .services {
@@ -139,7 +153,7 @@ a{
 }
 
 .contact button {
-  background: #00b3ff;
+  background: #59cbfc;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -184,7 +198,42 @@ footer p {
   height: 0;
   overflow: hidden;
 }
+.service-image1 {
+  max-width: 100%;
+  transition: opacity 1s ease;
+  height: 0;
+  overflow: hidden;
+}
 
+.service-image2 {
+  max-width: 100%;
+  transition: opacity 1s ease;
+  height: 0;
+  overflow: hidden;
+}
 .show {
   height: auto;
+}
+
+.tagline h1 {
+  margin: 10;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tagline h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;}
+
+
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
 }
